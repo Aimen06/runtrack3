@@ -8,7 +8,6 @@
     <title>Runtrack|Jour01</title>
     <SCRIPT LANGUAGE="JavaScript">
              alert('Hello Javascript!');
-
     </script>
 </head>
 <body>
