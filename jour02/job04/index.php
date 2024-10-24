@@ -5,13 +5,12 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <title>Runtrack|Job02</title>
+        <title>Runtrack|Job04</title>
         <script src="script.js" defer></script>
     </head>
     <body>
-        <article id="citation">
-            "L 'important n'est pas la chute, mais l'atterrissage.”.
-        </article>
-        <button id="button">Je suis un bouton</button>
+    <p>Un textarea</p>
+    <textarea id="keyloger" name="keyloger" rows="5" cols="33">
+</textarea>
     </body>
     </html>
