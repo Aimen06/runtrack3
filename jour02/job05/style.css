@@ -1,0 +1,19 @@
+body {
+    height: 2000px;
+    margin : 0 0;
+    overflow-x: auto;
+    min-width: 4096px;
+    
+}
+
+footer {
+    width: 4096px;
+    background-color: blue;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+}
+
+.blue {
+    background-color: blue;
+}
