@@ -1,18 +1,17 @@
-let p =document.querySelector('p');
+let p = $('p');
 function display()
 {
-   p.textContent = `Les logiciels et les cathédrales, c'est un peu la même chose 
-    - d'abord on les construit, ensuite on prie.`;
-    p.innerHTML +='<button id="hideBtn">Cacher</button>';
-    hideBtn = document.querySelector('#hideBtn')
-    hideBtn.style.display = 'block';
-    hideBtn.addEventListener('click',hide);
+    p.text(`Les logiciels et les cathédrales, c'est un peu la même chose 
+    - d'abord on les construit, ensuite on prie.`);
+    $('<button id="hideBtn">Cacher</button>').appendTo('p');
+    let hideBtn = $('#hideBtn');
+    hideBtn.css({display: "block"});
+    hideBtn.on('click',hide);
 }
 
 function hide() {
-    let p = document.querySelector('p');
-    p.textContent= '';
+    p.text('');
 }
 
-let buton = document.querySelector('#displayBtn');
-buton.addEventListener('click',display);
+let buton = $('#displayBtn');
+buton.on('click',display);
