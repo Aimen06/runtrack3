@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Connexion</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+                crossorigin="anonymous">
+
+        </script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Jour 05</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="connexion.html">Connexion</a>
+                    </li>
+                    <li>
+                        <a href="inscription.html">Inscription</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <h2>Connexion</h2>
+            <form action="" method="post">
+                <label for="email">Entrez votre email:</label>
+                <input type="email" id="email" name="email" value=""  minlength="2" maxlength="30" required>
+                <label for="password">Entrez votre  mot de passe:</label>
+                <input type="password" id="password" name="password" value=""  minlength="8" maxlength="30" required>
+                <input id="loginBtn" type="submit" value="Connexion">
+        </form>
+            <script src="script.js" defer></script>
+    </body>
+</html>
