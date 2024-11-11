@@ -2,67 +2,42 @@ body {
     margin: 0 auto;
 }
 
-#wrapper-jeux {
+#wrapper-rows {
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
 }
 
-#wrapper-jeux div {
-
-    height : 410px;
-    width: 140px;
+.carte {
+    height : 258px;
+    width: 250px;
     border : solid 1px  black;
     margin-right : 3px;
+    margin-bottom: 3px;
 }
 
-#wrapper-rainbow {
-    margin-top : 30px;
+.carte img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row1, .row2, .row3 {
     display: flex;
-    flex-direction: row;
 }
 
-#wrapper-rainbow div:hover {
-    border : solid 3px  red;
-}
 
 #wrapper-jeux div:hover {
-    border : solid 3px  red;
+    border : solid 5px  red;
 }
 
-
-#wrapper-rainbow div {
-    padding : 0;
-    height : 410px;
-    width: 140px;
-    border : solid 1px  black;
-    margin-right : 3px;
-    margin-bottom: 15px;
-
+.black {
+    filter: brightness(0%);
 }
 
 .win {
-    color : green;
-    font-size: 30px;
-    font-style: italic;
-    width: 967px !important;
-    height: 50px !important;
-    border-width: 0 !important;
-}
-
-.loose {
-    color : red;
-    font-size: 30px;
-    font-style: italic;
-    width: 967px !important;
-    height: 50px !important;;
-    border-width: 0 !important;
-}
-
-.loose:hover  {
-    border-width: 0 !important;
-}
-
-.win:hover  {
-    border-width: 0 !important;
+    font-size : 24px;
+    color: lawngreen;
 }
