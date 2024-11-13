@@ -1,0 +1,71 @@
+.nav-link {
+    color: black;
+}
+
+.wrapper-tittle {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(212,212,212);
+    padding-bottom :50px;
+}
+
+.wrapper-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.page {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.margin50 {
+    margin-top: 50px;
+}
+
+.margin30 {
+    margin-top: 30px;
+}
+
+.padding50 {
+    padding-bottom: 150px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.grey {
+    background-color: rgb(227,231,235);
+}
+
+.wrapper-text {
+    display: flex;
+    justify-content: right;
+    padding-right: 20%
+}
+
+
+.wrapper-progress {
+    padding-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.width60 {
+   width: 60%;
+}
