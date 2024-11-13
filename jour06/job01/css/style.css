@@ -1,0 +1,36 @@
+.nav-link {
+    color: black;
+}
+
+.wrapper-tittle {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(212,212,212);
+    padding-bottom :50px;
+}
+
+.wrapper-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.page {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.margin50 {
+    margin-top: 50px;
+}
