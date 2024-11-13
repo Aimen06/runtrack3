@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <title>Job01|Bootstrap</title>
+  <title>Job02|Bootstrap</title>
 </head>
 <body>
 <header>
@@ -21,19 +21,69 @@
   <div class="wrapper-tittle">
     <h1>La Plateforme_</h1>
   </div>
-  <div class="modal" tabindex="-1">
+  <div class="modal" tabindex="-1" id="modalAchat">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
+          <h5 class="modal-title">Confirmation : achat de papillon</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>Modal body text goes here.</p>
+          <p>Bravo, vous avez acheté un super papillon !</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" tabindex="-1" id="modalForm">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Valeur formulaire</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="modal-basic-addon1">@</span>
+              </div>
+              <input type="text" id="modal-username" class="form-control form-control-sm" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <input type="text" id="modal-password" class="form-control form-control-sm" placeholder="Mot de passe" aria-label="mot de passe" aria-describedby="mot-de-passe">
+              <div class="input-group-append">
+                <span class="input-group-text" id="modal-basic-addon2">@example.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="modal-dodgecoin">Url des internet 2 et 2.1</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Dodgecoin</span>
+              </div>
+              <input type="text" class="form-control form-control-sm" id="modal-dodgecoin" aria-label="Amount (to the nearest dollar)">
+              <div class="input-group-append">
+                <span class="input-group-text">.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" >https://33t.lptf/dkwb/berlusconimkt/</span>
+              </div>
+              <input type="text" id="modal-basic-addon3" class="form-control form-control-sm" id="modal-basic-url" aria-describedby="basic-addon3">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
         </div>
       </div>
     </div>
@@ -44,7 +94,7 @@
       <div class="card-body">
         <h5 class="card-title">Un papillon</h5>
         <p class="card-text">Un papillon c'est un peu comme une chenille, mais avec des ailes. Ne pas ingérer.</p>
-        <a href="#" id="buyButterffly" class="btn btn-primary">Commander votre propre papillon</a>
+        <a href="#" id="buyPapillon" class="btn btn-primary">Commander votre propre papillon</a>
       </div>
     </div>
     <div class="card grey" style="width: 60rem;">
@@ -54,7 +104,7 @@
           Le sens le plus courant désigne notre planète, la Terre, avec ses habitants, et son environnement plus ou moins naturel. </p>
         <hr />
         <h6 class="card-subtitle mb-2"> Le sens étendu de l'univers dans son ensemble</h6>
-        <button type="button" class="btn btn-danger">Rebooter le monde</button>
+        <button type="button" id="rebootBtn" class="btn btn-danger">Rebooter le monde</button>
         <div class="spinner-border text-info" role="status">
           <span class="sr-only"></span>
         </div>
@@ -105,13 +155,13 @@
               <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">@</span>
               </div>
-              <input type="text" class="form-control form-control-sm" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              <input type="text" id="username" class="form-control form-control-sm" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
             </div>
           </div>
 
           <div class="form-group">
             <div class="input-group mb-3">
-              <input type="text" class="form-control form-control-sm" placeholder="Mot de passe" aria-label="mot de passe" aria-describedby="mot-de-passe">
+              <input type="text" id="password" class="form-control form-control-sm" placeholder="Mot de passe" aria-label="mot de passe" aria-describedby="mot-de-passe">
               <div class="input-group-append">
                 <span class="input-group-text" id="basic-addon2">@example.com</span>
               </div>
@@ -124,7 +174,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text">Dodgecoin</span>
               </div>
-              <input type="text" class="form-control form-control-sm" id="dodgecoin" aria-label="Amount (to the nearest dollar)">
+              <input type="text" id="dodgecoin" class="form-control form-control-sm" id="dodgecoin" aria-label="Amount (to the nearest dollar)">
               <div class="input-group-append">
                 <span class="input-group-text">.00</span>
               </div>
@@ -134,9 +184,9 @@
           <div class="form-group">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon3">https://33t.lptf/dkwb/berlusconimkt/</span>
+                <span class="input-group-text" >https://33t.lptf/dkwb/berlusconimkt/</span>
               </div>
-              <input type="text" class="form-control form-control-sm" id="basic-url" aria-describedby="basic-addon3">
+              <input type="text" id="basic-addon3" class="form-control form-control-sm" id="basic-url" aria-describedby="basic-addon3">
             </div>
           </div>
         </div>
@@ -144,14 +194,14 @@
         <!-- Deuxième colonne (Email, Password, checkbox et bouton submit) -->
         <div class="col-md-6">
           <div class="form-group">
-            <label for="input5">Email address</label>
-            <input type="text" class="form-control form-control-sm" id="input5" placeholder="Email address">
+            <label for="email2">Email address</label>
+            <input type="text" id="email2" class="form-control form-control-sm" id="input5" placeholder="Email address">
             <small class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
 
           <div class="form-group  margin30 ">
-            <label for="input6">Password</label>
-            <input type="password" class="form-control form-control-sm" id="input6" placeholder="Password">
+            <label for="pass">Password</label>
+            <input type="password" class="form-control form-control-sm" id="pass" placeholder="Password">
           </div>
 
           <div class="form-check">
@@ -171,5 +221,6 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
