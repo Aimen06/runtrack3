@@ -34,3 +34,38 @@ main {
 .margin50 {
     margin-top: 50px;
 }
+
+.margin30 {
+    margin-top: 30px;
+}
+
+.padding50 {
+    padding-bottom: 150px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.grey {
+    background-color: rgb(227,231,235);
+}
+
+.wrapper-text {
+    display: flex;
+    justify-content: right;
+    padding-right: 20%
+}
+
+
+.wrapper-progress {
+    padding-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.width60 {
+   width: 60%;
+}
