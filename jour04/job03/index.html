@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jour04|Job03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Formulaire pokemon</h1>
+<form>
+  <label for="id">Enter l'id: </label>
+  <input id="id" type="text" name="id" required/>
+  <label for="nom">Enter le nom: </label>
+  <input id="nom" type="text" name="nom" required/>
+  <label for="type">Sélectionner le type: </label>
+  <select id="type" name="type" required></select>
+  <input type="submit" value="Filtrer" disabled />
+</form>
+<div id="results"></div>
+<script src="script.js" defer></script>
+</body>
+</html>
