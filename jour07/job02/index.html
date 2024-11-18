@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Jour07|Job01</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
 <header>
-  <nav>
+  <nav class="teal lighten-2">
     <div class="nav-wrapper">
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <ul id="nav-mobile" class=" hide-on-med-and-down">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="index.html">Inscription</a></li>
         <li><a href="index.html">Connexion</a></li>
@@ -45,45 +46,33 @@
         </p>
       </div>
     </div>
-
     <div class="row">
-      <!-- Prénom -->
       <div class="input-field col s6">
         <input id="prenom" type="text" name="prenom" required>
         <label for="prenom">Prénom</label>
       </div>
-
-      <!-- Nom -->
       <div class="input-field col s6">
         <input id="nom" type="text" name="nom" required>
         <label for="nom">Nom</label>
       </div>
     </div>
-
     <div class="row">
-      <!-- Adresse -->
       <div class="input-field col s12">
         <input id="adresse" type="text" name="adresse" required>
         <label for="adresse">Adresse</label>
       </div>
     </div>
-
     <div class="row">
-      <!-- Adresse Email -->
       <div class="input-field col s12">
         <input id="email" type="email" name="email" required>
         <label for="email">Adresse Email</label>
       </div>
     </div>
-
     <div class="row">
-      <!-- Mot de passe -->
       <div class="input-field col s6">
         <input id="password" type="password" name="password" required>
         <label for="password">Mot de passe</label>
       </div>
-
-      <!-- Confirmation du mot de passe -->
       <div class="input-field col s6">
         <input id="password-confirm" type="password" name="password_confirm" minlength="8" maxlength="30" required>
         <label for="password-confirm">Confirmer le mot de passe</label>
@@ -126,17 +115,14 @@
         </div>
       </div>
     </div>
-
-    <!-- Bouton de soumission -->
     <div class="input-field center-align">
       <button class="btn waves-effect waves-light" type="submit">
         Créer
       </button>
     </div>
   </form>
-
 </main>
-<footer class="page-footer">
+<footer class="page-footer teal lighten-2">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
@@ -146,10 +132,10 @@
       <div class="col l4 offset-l2 s12">
         <h5 class="white-text">Links</h5>
         <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="index.html">Inscription</a></li>
-          <li><a href="index.html">Connexion</a></li>
-          <li><a href="index.html">Rechercher</a></li>
+          <li><a class="white-text" href="index.html">Accueil</a></li>
+          <li><a class="white-text" href="index.html">Inscription</a></li>
+          <li><a class="white-text" href="index.html">Connexion</a></li>
+          <li><a class="white-text" href="index.html">Rechercher</a></li>
         </ul>
       </div>
     </div>
