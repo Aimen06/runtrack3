@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Jour08|Job01</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire de Création de Compte</title>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#">Inscription</a>
+    <a href="#">Connexion</a>
+    <a href="#">Rechercher</a>
+  </nav>
+</header>
+<section>
+  <h1>Création Compte</h1>
+  <form action="" method="">
+    <div>
+      <label>Civilité :</label>
+      <label><input type="radio" name="civilite" value="monsieur" required> Monsieur</label>
+      <label><input type="radio" name="civilite" value="madame"> Madame</label>
+    </div>
+    <div>
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+    </div>
+    <div>
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+    </div>
+    <div>
+      <label for="adresse">Adresse :</label>
+      <input type="text" id="adresse" name="adresse" placeholder="Votre adresse">
+    </div>
+    <div>
+      <label for="email">Adresse email :</label>
+      <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+    </div>
+    <div>
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+    </div>
+    <div>
+      <label for="password_confirm">Confirmez le mot de passe :</label>
+      <input type="password" id="password_confirm" name="password_confirm" placeholder="Confirmez votre mot de passe" required>
+    </div>
+    <div>
+      <label>Passions :</label>
+      <label><input type="checkbox" name="passions" value="informatique"> Informatique</label>
+      <label><input type="checkbox" name="passions" value="voyages"> Voyages</label>
+      <label><input type="checkbox" name="passions" value="sport"> Sport</label>
+      <label><input type="checkbox" name="passions" value="lecture"> Lecture</label>
+    </div>
+    <div>
+      <button type="submit">Créer</button>
+    </div>
+  </form>
+</section>
+<footer>
+  <ul>
+    <li><a href="#">Accueil</a></li>
+    <li><a href="#">Inscription</a></li>
+    <li><a href="#">Connexion</a></li>
+    <li><a href="#">Rechercher</a></li>
+  </ul>
+</footer>
+</body>
+</html>
