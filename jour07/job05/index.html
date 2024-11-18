@@ -2,9 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adbeus Coffee Shops</title>
+  <!-- Import Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f4ef;
+    }
+    .card-title {
+      font-size: 1.2rem;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .brand-logo svg {
+      height: 40px;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 <body>
-$END$
+<nav>
+  <div class="nav-wrapper teal lighten-2">
+    <div class="container">
+      <a href="#" class="brand-logo">
+        <img src="images/logo.svg" alt="Logo" style="height: 50px; vertical-align: middle;">
+        Starbucks Coffe
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Rewards</a></li>
+        <li><a href="#">Gift cards</a></li>
+        <li><a href="#">Find a store</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="section">
+    <h5 class="section-title">New Coffee Shops</h5>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/latte.webp" alt="Café Latte">
+          </div>
+          <div class="card-content">
+            <span class="card-title">CAFÉ LATTE</span>
+            <p>The Plateau</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/starbucks.jpeg" alt="Starbucks Metz">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Starbucks</span>
+            <p>Starbucks / Metz</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <h5 class="section-title">Recent Coffee Shops</h5>
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card small">
+          <div class="card-image">
+            <img  src="images/china.jpg" alt="China">
+          </div>
+          <div class="card-content">
+            <span class="card-title">China</span>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card small">
+          <div class="card-image">
+            <img  src="images/dubai.jpg" alt="dubaï">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Dubaï</span>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card small">
+          <div class="card-image">
+            <img src="images/london.jpg" alt="London">
+          </div>
+          <div class="card-content">
+            <span class="card-title">London</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
